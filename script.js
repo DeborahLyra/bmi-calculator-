@@ -6,9 +6,9 @@ function result() {
 
     let bmi = weight / (height ** 2)
 
-    let text 
+    let text
     if (bmi < 18.5) {
-        text ='Underweight'
+        text = 'Underweight'
     } else if (bmi >= 18.5 && bmi < 25) {
         text = 'Normal weight'
     } else if (bmi >= 25 && bmi < 30) {
@@ -24,7 +24,7 @@ function result() {
 };
 
 document.addEventListener('keypress', event => {
-    if (event.keyCode === 13){
+    if (event.keyCode === 13) {
         result()
     }
 })
